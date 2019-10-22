@@ -1,16 +1,5 @@
-<<<<<<< HEAD
-/* This is a test - Alexandra */
+/* Contact Form */
 
-.navbar{
-    background-color: blue;
-}
-
-#contact-menu {
-    color: pink;
-=======
-/* This is Stephanie's test code */
-body {
-    background-color: pink;
-    color: white;
->>>>>>> 36c8ef27b6272507ec8dd7e49e7441d5be4b525c
+#contact-cont{
+    margin-top: 100px;
 }
