@@ -1,29 +1,78 @@
-<<<<<<< HEAD:home.css
-=======
-
->>>>>>> 74e4131969b219156762272a6a742d0b3534d3cf:style.css
-/* This is a test - Alexandra */
-
-.navbar{
-    background-color: blue;
+body{
+    margin: 0;
+    
+}
+h1{
+    font-family: 'Boogaloo', cursive;
+    margin: 0;
+}
+h1 img{
+    height: 10vh;
 }
 
-#contact-menu {
-    color: pink;
+header{
+    background: #FAA26B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
 }
 
-/* This is Stephanie's test code */
-body {
-    background-color: pink;
+nav a {
+    font-family: 'Open Sans' , sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    background: yellowgreen;
+}
+
+main{
+    min-height: 78vh;
+    padding-top: 12vh;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+   margin: 5px;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
     color: white;
-<<<<<<< HEAD:home.css
+  }
+  
+.fa-instagram {
+    /*background: #125688;*/
+    color: white;
+  }
+  
+  footer{
+    background: #FAA26B;
+    /*text-align: center;*/
+    height: 10vh;
+    
+  }
+  #copyR p{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#social a{
+   float: left;
 }
 
 
-/* Contact Form */
-
-#contact-cont{
-    margin-top: 100px;
-=======
->>>>>>> 74e4131969b219156762272a6a742d0b3534d3cf:style.css
-}

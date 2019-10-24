@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    
+}
+h1{
+    font-family: 'Boogaloo', cursive;
+    margin: 0;
+}
+h1 img{
+    height: 10vh;
+}
+
+header{
+    background: #FAA26B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    font-family: 'Open Sans' , sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    background: yellowgreen;
+}
+
+main{
+    min-height: 78vh;
+    padding-top: 12vh;
+}
+
+#gallery{
+    text-align: center;
+    
+}
+
+#gallery figure{
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    margin: 10px;
+    border: solid 5px;
+    border-color: yellowgreen;
+}
+
+#gallery figcaption{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(250, 162, 107, 0.75);
+    padding: 5px 0;
+    display: none;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+}
+
+#gallery figure:hover figcaption{
+    display: block;
+}
+
+#gallery img{
+    height: 100%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+   margin: 5px;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
+    color: white;
+  }
+  
+.fa-instagram {
+    /*background: #125688;*/
+    color: white;
+  }
+  
+  footer{
+    background: #FAA26B;
+    /*text-align: center;*/
+    height: 10vh;
+    
+  }
+  #copyR p{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#social a{
+   float: left;
+}
+
+
