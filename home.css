@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    
+}
+
+h1{
+    font-family: 'Boogaloo', cursive;
+    margin: 0;
+}
+
+h1 img{
+    height: 10vh;
+}
+
+header{
+    background: #FAA26B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    font-family: 'Open Sans' , sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    background: yellowgreen;
+}
+
+main{
+    min-height: 78vh;
+    padding-top: 12vh;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+   margin: 5px;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
+    color: white;
+  }
+  
+.fa-instagram {
+    /*background: #125688;*/
+    color: white;
+  }
+  
+  footer{
+    background: #FAA26B;
+    /*text-align: center;*/
+    height: 10vh;
+    
+  }
+  #copyR p{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding-top: 20px;
+}
+ 
+#social a{
+   float: left;
+}
