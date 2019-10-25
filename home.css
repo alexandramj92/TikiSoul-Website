@@ -2,12 +2,15 @@ body{
     margin: 0;
     
 }
+
 h1{
     font-family: 'Boogaloo', cursive;
     margin: 0;
 }
+
 h1 img{
     height: 10vh;
+    padding: 12px;
 }
 
 header{
@@ -54,25 +57,23 @@ main{
   }
   
 .fa-instagram {
-    /*background: #125688;*/
     color: white;
   }
   
-  footer{
-    background: #FAA26B;
-    /*text-align: center;*/
-    height: 10vh;
-    
-  }
-  #copyR p{
+  footer {
+    content: "";
+    display: block;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #FAA26B;
+    font-family: 'Open Sans' , sans-serif;
     text-align: center;
-    width: 300px;
-    margin: auto;
-    padding-top: 20px;
-}
-
-#social a{
+ }
+ 
+.container a{
    float: left;
 }
-
-
