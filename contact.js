@@ -14,7 +14,7 @@ $("#contact-submit").click(function(event){
     //input validation
 
     if (email.length>8 && email.includes('@') && email.includes('.')){
-    } else{
+    } else {
         event.preventDefault();
         statusEl.append('<div>Email is not valid!</div>');
     }
@@ -32,8 +32,9 @@ $("#contact-submit").click(function(event){
     if (message.length<1){
         statusEl.append("<div>Message is not valid!</div>");
         event.preventDefault();
+    } else{
+        setTimeout(sentConf, 1000);
     }
-
 
 })
 
@@ -41,8 +42,28 @@ $("#contact-submit").click(function(event){
 function sentConf(){
 
     $("#contact-cont").empty();
-}
+    var contactCont = $("#contact-cont");
+    var newRow = $("<div>");
+    newRow.attr("class","row");
+    newRow.attr("id", "thank-you-message");
+    contactCont.append(newRow);
 
+    var newCol = $("<div>");
+    newCol.attr("class", "col-md-12");
+    newRow.append(newCol);
+
+    var newTxt = $("<h1>");
+    newTxt.attr("id", "newTxt");
+    newTxt.text("Thank you for contacting Tiki Soul!");
+    newCol.append(newTxt);
+
+    var img = $("<img>");
+    img.attr("id", "ty-img");
+    img.attr("src", "images/contact-pine.jpg");
+    img.attr("alt", "pineapple with sunglasses");
+    newCol.append(img);
+
+}
 
 
 });
