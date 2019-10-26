@@ -13,7 +13,7 @@ h1 img{
     padding: 12px;
 }
 
-header{
+header {
     background: #FAA26B;
     display: flex;
     justify-content: space-around;
@@ -21,6 +21,7 @@ header{
     height: 10vh;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav a {
@@ -39,17 +40,40 @@ main{
     padding-top: 12vh;
 }
 
+#home-image {
+    align-content: center;
+    z-index: 2;
+}
+
+#home-content-1 {
+    padding: 10px 0 50px 0;
+    margin: 10px 0 50px 0;
+}
+
+#home-image {
+    align-content: center;
+}
+
+#home-content-1 h2 {
+    font-family: 'Boogaloo', cursive;
+    color: #FAA26B;
+}
+
+#home-blurb p {
+    font-size: 0.8rem;
+    line-height: 2;
+}
 .fa {
     padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-   margin: 5px;
+    margin: 5px;
 }
   
 .fa:hover {
-      opacity: 0.7;
+    color: #7ed957;
   }
   
 .fa-facebook {
@@ -60,7 +84,7 @@ main{
     color: white;
   }
   
-  footer {
+footer {
     content: "";
     display: block;
     clear: both;
@@ -74,6 +98,6 @@ main{
     text-align: center;
  }
  
-.container a{
+.container a {
    float: left;
 }
