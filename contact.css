@@ -5,7 +5,17 @@ body{
     
 }
 
-h1{
+#logo-image{
+    width: 100px;
+}
+
+.navbar {
+    background: #FAA26B;
+    width: 100%;
+    z-index: 3;
+}
+
+/* h1{
     font-family: 'Boogaloo', cursive;
     margin: 0;
 }
@@ -15,7 +25,7 @@ h1 img{
     padding: 12px;
 }
 
-header{
+nav {
     background: #FAA26B;
     display: flex;
     justify-content: space-around;
@@ -40,7 +50,7 @@ nav a:hover{
 main{
     min-height: 78vh;
     padding-top: 12vh;
-}
+} */
 
 .fa {
     padding: 10px;
@@ -94,18 +104,19 @@ main{
     height: 420px;
     width: 200px;
     z-index: 2;
-
+    box-shadow: 5px 10px rgba(77, 62, 3, 0.7);
 }
 
 #user-input{
     margin-top: 120px;
     margin-left: -200px;
     background-color: #ffffff;
-    border: 2px dashed #407D3C ;
+    border: 2px solid #407D3C ;
     padding: 30px 30px 30px 200px;
     border-radius: 2em;
     font-family: 'Open Sans', sans-serif;
     height: 500px;
+    box-shadow: 5px 10px rgba(30, 56, 27, 0.7);
     z-index: 1;
 
 }
@@ -116,6 +127,8 @@ main{
 
 #contact-title{
     text-align: center;
+    font-family: 'Boogaloo', cursive;
+
 }
 
 #contact-submit{
