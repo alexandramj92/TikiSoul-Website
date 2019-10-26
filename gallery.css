@@ -29,7 +29,7 @@ nav a {
     text-decoration: none;
 }
 nav a:hover{
-    background: yellowgreen;
+    background: #F2D661;
 }
 
 main{
@@ -48,7 +48,7 @@ main{
     height: 250px;
     margin: 10px;
     border: solid 5px;
-    border-color: yellowgreen;
+    border-color: #F2D661;
 }
 
 #gallery figcaption{
