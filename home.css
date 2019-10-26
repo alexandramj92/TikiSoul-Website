@@ -24,6 +24,15 @@ header {
     z-index: 1;
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
 nav a {
     font-family: 'Open Sans' , sans-serif;
     display: inline-block;
