@@ -38,7 +38,7 @@ nav a {
     font-family: 'Open Sans' , sans-serif;
 }
 nav a:hover{
-    background: #F2D661!important;
+    color: #F2D661!important;
 }
 
 main{
@@ -56,8 +56,8 @@ main{
     position: relative;
     height: 250px;
     margin: 10px;
-    border: solid 5px;
-    border-color: #F2D661;
+    border: solid 6px;
+    border-color: #7ed957;
 }
 
 #gallery figcaption{
@@ -65,7 +65,7 @@ main{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(250, 162, 107, 0.75);
+    background: #F2D661;
     padding: 5px 0;
     display: none;
     font-weight: bold;
@@ -90,7 +90,7 @@ main{
 }
   
 .fa:hover {
-      opacity: 0.7;
+      color:#7ed957;
   }
   
 .fa-facebook {
