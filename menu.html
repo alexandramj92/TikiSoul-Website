@@ -9,46 +9,48 @@
     <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
+ <!-- Font Awesome -->
+ <script src="https://kit.fontawesome.com/c232fca8b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+
 <!--Navbar-->
 
-<header>
-        <h1><img src="images/tikisoul_logo.png" alt="Tiki Soul"></h1>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navLinks">
-            <ul class="navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-            </ul>
-            </div>
-            </nav>    
-        </header>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="home.html"><img id="logo-image" src="images/logoHighRes.png"></a>
+  
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-0 mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home </a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+       
+      </ul>
+    </div>
+  </nav>
+
 
    
 <!--Menu Container-->
     <div class="container" id="menu-cont">
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
         <div class="card">
             <div class="row">
 
@@ -56,28 +58,61 @@
                         <div class="card-body">
                                 <h1 class="card-title">Menu</h1>
                                 <h2>Tacos</h2>
-                                <p class="card-text">Chicken</p>
-                                <p class="card-text">Steak Teriyaki</p>
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td class="menu-item">Chicken</td>
+                                        <td class="price-col">$2.50 ea/ 3 for $6</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="menu-item">Steak Teriyaki</td>
+                                        <td class="price-col">$2.50 ea/ 3 for $6</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                     
                                 <h2>Bowls</h2>
-                                <p class="card-text">Chicken & Steak Pineapple</p>
-                                <p class="card-text">Shrimp Pineapple</p>
-            
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                    <td class="menu-item">Chicken OR Steak Pineapple</td>
+                                    <td class="price-col">$13</td>
+                                    </tr>
+                                      <tr>
+                                        <td class="menu-item">Chicken & Steak Pineapple</td>
+                                        <td class="price-col">$15</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="menu-item"> Shrimp Pineapple</td>
+                                        <td class="price-col">$20</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <h2>Drinks</h2>
+                                  <table class="table">
+                                      <tbody>
+                                      <tr>
+                                      <td class="menu-item">Pineapple Lemonade</td>
+                                      <td class="price-col">$3</td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
                             </div>
                 </div>
 
-                <div class="col-md-4">
-                    <h3>Prices</h3>
-                    
-
-                </div>
+              
             </div>
                
         </div>
 
         </div>
-        <div class="col-md-5">
-                <img id="menu-image" src="images/menu-image.jpg" alt="image of menu item">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5" id="menu-blurb">
+            <i class="fas fa-bell fa-3x" id="alert"></i>
+            <h1 id="menu-blurb-text">Our menu changes regularly so check back for updates! </h1>
+
         </div>
     </div>
     </div>
