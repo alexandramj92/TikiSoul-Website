@@ -62,8 +62,5 @@ function sentConf(){
     img.attr("src", "images/contact-pine.jpg");
     img.attr("alt", "pineapple with sunglasses");
     newCol.append(img);
-
 }
-
-
 });

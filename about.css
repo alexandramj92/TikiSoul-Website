@@ -1,5 +1,5 @@
 header{
-    background: #FAA26B;
+    background: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,27 +23,25 @@ nav a {
     text-decoration: none;
 }
 nav a:hover{
-    background: yellowgreen;
+    background: #f2d661;
 }
-
-main{
-    min-height: 78vh;
-    padding-top: 12vh;
+#about-content {
+    padding-top: 20px;
 }
-
 #aboutme {
     padding: 20px;
+    border: 2px solid #407D3C;
+    font-family: 'Boogaloo', cursive;
+    font-size: 20px;
 }
 
 #h-about {
+    padding: 20px;
     background-image: url("images/backgroundpineapple.jpg");
     font-family: 'Boogaloo', cursive;
 }
 #p-about {
-    border: 2px solid #407D3C;
-    font-family: 'Boogaloo', cursive;
-    font-size: 20px;
-    padding: 20px;
+    font-family: 'Open Sans' , sans-serif; 
 }
 
 .container {
