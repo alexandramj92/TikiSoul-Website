@@ -95,4 +95,12 @@ function initMap() {
 
 function getNoServiceImage() {
     // create img tag, etc for when there is no taco truck on any given day of the week
+    var noService = document.createElement("img");
+    noService.setAttribute("src", "images/home/map-no-service.png");
+    noService.setAttribute("alt", "no service today");
+    noService.setAttribute("id", "no-service-img");
+
+    var mapDisplay = document.getElementById("map");
+    mapDisplay.append(noService);
+
 }
