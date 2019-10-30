@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tiki Soul | Pineapple Bowls & Tacos</title>
+    <title>TikiSoul | Pineapple Bowls & Tacos</title>
 
 <!-- Stylesheet Links -->
 
@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/dedaf25262.js" crossorigin="anonymous"></script>
 
 <!-- Personalized CSS -->
 <link rel="stylesheet" type="text/css" href="home.css">
@@ -39,9 +39,9 @@
             <li class="nav-item">
             <a class="nav-link" href="menu.html">Menu</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -69,34 +69,39 @@
 
 <!-- Google Maps API -->
 <div class="row" id="home-content-1">
-  <div class="col-md-6">
+  <div class="col-md-6 order-md-2">
     <div id="google-maps-display" class="text-center">
-      <h2>Find Tiki Soul</h2>
+      <h2>Find TikiSoul</h2>
+      <div id="map"></div>
     </div>
   </div>
 
 <!-- Tiki Soul Blurb -->
-  <div class="col-md-6">
+  <div class="col-md-6 order-md-1">
     <div id="home-blurb" class="text-center">
-      <h2>We Are Tiki Soul</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae libero neque tempore temporibus in culpa voluptatum nesciunt cum! Obcaecati quam tempore eaque reiciendis consectetur blanditiis velit doloremque culpa vero, natus laborum corporis fugit iusto cupiditate quo fugiat voluptatibus, officia dignissimos omnis! Ipsum exercitationem explicabo quasi iusto voluptatibus a eligendi aperiam laborum eveniet in nesciunt itaque blanditiis nemo quod quia praesentium possimus architecto, qui dicta eos mollitia natus tempora nobis magnam! Minima animi commodi aliquam deleniti blanditiis praesentium nemo quae voluptate quam.</p>
+      <h2>We Are TikiSoul</h2>
+      <p>Launched in February 2019 by four friends out of South Central Los Angeles with a plan to infuse food with a different fun vibe, TikiSoul is known for its Pineapple Bowl, Teriyaki Tacos, one-of-a-kind Pineapple Fried Rice, and Pineapple Lemonade. It's arguably the best in LA, people can't get enough! TikiSoul has participated in the Orange County Black History Fair, catered family reunions, special events, and more. We continue to have pop-ups and infuse soul into every palate throughout Southern California.</p>
     </div>
   </div>
 </div>      
 </main>
 
-  <footer>
-      <div class="container">
-      <a href="https://www.facebook.com/TikiSoul-114390926646247" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/tiki_soul/" class="fa fa-instagram"></a>
-      <span class= "text-muted">Copyright &#169; 2019</span>
-      <span class= "text-muted">Los Angeles, CA</span>
-      </div>
-  </footer>
-
+<footer>
+    <div class="container">
+    <a href="https://www.facebook.com/TikiSoul-114390926646247" class="fab fa-facebook-square"></a>
+    <a href="https://www.instagram.com/tiki_soul/" class="fab fa-instagram"></a>
+    <span class= "text-muted">Copyright &#169; 2019</span>
+    <span class= "text-muted">Los Angeles, CA</span>
+    </div>
+</footer>
 <!-- Bootstrap JS links -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+<script src="home.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAriM2Y1T6JQCBkNNfKIBWcj-UOxhI2yT0"></script>
 </body>
 </html>
