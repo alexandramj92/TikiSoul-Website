@@ -24,7 +24,7 @@ nav a:hover{
 
 /* Footer */
 
-.fa {
+.fab {
     padding: 10px;
     font-size: 30px;
     width: 50px;
@@ -33,11 +33,12 @@ nav a:hover{
     margin: 5px;
 }
   
-.fa:hover {
+.fab:hover {
       opacity: 0.7;
+      color: #7ed957;
   }
   
-.fa-facebook {
+.fa-facebook-square {
     color: white;
   }
   
@@ -66,7 +67,9 @@ nav a:hover{
 
 
 /* Contact Section */
-
+#form-title {
+    font-family: 'Boogaloo', cursive;
+}
 #side-text{
     margin-top: 150px;
     padding: 30px;
