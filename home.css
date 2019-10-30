@@ -74,6 +74,15 @@ main{
     margin: 20px;
 }
 
+#no-service-img {
+    height: 475px;
+    width: 475px;
+    border-radius: 2em;
+    align-content: center;
+    margin-right: 10px;
+    padding: 20px;
+} 
+
 #home-blurb p {
     font-size: 1rem;
     line-height: 2;
@@ -131,6 +140,11 @@ footer {
     #map {
         height: 400px;
         width: 400px;
+        align-content: center;
+    }
+    #no-service-img {
+        height: 375px;
+        width: 375px;
         align-content: center;
     }
 }
