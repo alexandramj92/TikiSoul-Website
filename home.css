@@ -64,22 +64,22 @@ main{
 }
 
 #map {
-    height: 500px;
+    height: 400px;
     /* The height is 400 pixels */
-    width: 500px;
+    width: 400px;
     /* The width is the width of the web page */
     border: 4px solid green;
     border-radius: 2em;
     align-content: center;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 #no-service-img {
-    height: 475px;
-    width: 475px;
+    height: 375px;
+    width: 375px;
     border-radius: 2em;
     align-content: center;
-    margin-right: 10px;
+    margin-right: 10px auto;
     padding: 20px;
 } 
 
@@ -138,13 +138,16 @@ footer {
 
 @media (max-width: 1200px){
     #map {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         align-content: center;
+        margin: auto;
+        margin-bottom: 20px;
     }
     #no-service-img {
-        height: 375px;
-        width: 375px;
+        height: 275px;
+        width: 275px;
         align-content: center;
+        margin: auto;
     }
 }
