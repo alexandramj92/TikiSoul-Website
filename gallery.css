@@ -10,24 +10,6 @@ h1 img{
     height: 10vh;
     padding: 12px;
 }
-
-/*header{
-    background: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-    position: fixed;
-    width: 100%;
-}
-
-nav a {
-    font-family: 'Open Sans' , sans-serif;
-    display: inline-block;
-    padding: 10px 15px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}*/
 #logo-image{
     width: 100px;
 }
@@ -55,9 +37,9 @@ main{
     display: inline-block;
     position: relative;
     height: 250px;
-    margin: 10px;
+    margin: 20px;
     border: solid 6px;
-    border-color: #7ed957;
+    border-color: #407D3C;
 }
 
 #gallery figcaption{
@@ -80,25 +62,25 @@ main{
     height: 100%;
 }
 
-.fa {
+.fab {
     padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-   margin: 5px;
+    margin: 5px;
+    color: white;
 }
   
-.fa:hover {
-      color:#7ed957;
+.fab:hover {
+      color:#407D3C;
   }
   
-.fa-facebook {
+.fab-facebook {
     color: white;
   }
   
 .fa-instagram {
-    /*background: #125688;*/
     color: white;
   }
   
