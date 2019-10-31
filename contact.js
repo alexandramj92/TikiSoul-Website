@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    loadFields();
 
 $("#contact-submit").click(function(event){
     console.log("Submit button clicked");
@@ -37,6 +38,52 @@ $("#contact-submit").click(function(event){
     }
 
 })
+
+
+
+
+//event listener to save fields to local storage
+$( "#email" ).keyup(function() {
+    console.log( "Handler for .keyup() called." );
+    email = $("#email").val();
+    localStorage.setItem("email", email);
+
+  });
+
+$("#firstName").keyup(function(){
+    firstName = $("#firstName").val();
+    localStorage.setItem("firstName", firstName);
+
+});
+
+$("#lastName").keyup(function(){
+    lastName = $("#lastName").val();
+    localStorage.setItem("lastName", lastName);
+})
+
+$("#contactText").keyup(function(){
+    message = $("#contactText").val();
+    localStorage.setItem("message", message);
+})
+
+  //function to load fields from local storage
+function loadFields(){
+    var email = localStorage.getItem("email");
+    $("#email").val(email);
+
+    var firstName = localStorage.getItem("firstName");
+    $("#firstName").val(firstName);
+
+    var lastName = localStorage.getItem("lastName");
+    $("#lastName").val(lastName);
+
+    var message = localStorage.getItem("message");
+    $("#contactText").val(message);
+}
+
+
+
+
 
 
 function sentConf(){
