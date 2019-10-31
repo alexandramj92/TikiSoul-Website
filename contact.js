@@ -47,27 +47,37 @@ $( "#email" ).keyup(function() {
     console.log( "Handler for .keyup() called." );
     email = $("#email").val();
     localStorage.setItem("email", email);
-
+    localStorage.setItem("timeStamp", Date.now());
   });
 
 $("#firstName").keyup(function(){
     firstName = $("#firstName").val();
     localStorage.setItem("firstName", firstName);
+    localStorage.setItem("timeStamp", Date.now());
 
 });
 
 $("#lastName").keyup(function(){
     lastName = $("#lastName").val();
     localStorage.setItem("lastName", lastName);
+    localStorage.setItem("timeStamp", Date.now());
+
 })
 
 $("#contactText").keyup(function(){
     message = $("#contactText").val();
     localStorage.setItem("message", message);
+    localStorage.setItem("timeStamp", Date.now());
+
 })
 
   //function to load fields from local storage
-function loadFields(){
+    function loadFields(){
+    var msBeforeClearingStorage = 2000;
+    if (Date.now()-localStorage.getItem("timeStamp")>msBeforeClearingStorage){
+        localStorage.clear();
+        return;
+    }
     var email = localStorage.getItem("email");
     $("#email").val(email);
 
