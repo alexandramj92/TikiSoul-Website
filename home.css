@@ -89,6 +89,15 @@ main{
     padding: 10px;
 }
 
+#home-blurb a {
+    color: #7ed957;
+}
+
+#home-blurb a:hover {
+    text-decoration: none;
+    color: #F2D661;
+}
+
 /* Footer Styling */
 .fab {
     padding: 10px;
@@ -126,7 +135,7 @@ footer {
     color: white;
  }
  
-.container a {
+#footer-links a {
    float: left;
 }
 
