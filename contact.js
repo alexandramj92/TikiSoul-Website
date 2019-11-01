@@ -3,7 +3,6 @@ $(document).ready(function(){
     loadFields();
 
 $("#contact-submit").click(function(event){
-    console.log("Submit button clicked");
 
     var email = $("#email").val();
     var firstName = $("#firstName").val();
@@ -44,7 +43,6 @@ $("#contact-submit").click(function(event){
 
 //event listener to save fields to local storage
 $( "#email" ).keyup(function() {
-    console.log( "Handler for .keyup() called." );
     email = $("#email").val();
     localStorage.setItem("email", email);
     localStorage.setItem("timeStamp", Date.now());
