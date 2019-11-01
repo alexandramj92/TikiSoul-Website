@@ -73,7 +73,7 @@ $("#contactText").keyup(function(){
 
   //function to load fields from local storage
     function loadFields(){
-    var msBeforeClearingStorage = 2000;
+    var msBeforeClearingStorage = 600000;
     if (Date.now()-localStorage.getItem("timeStamp")>msBeforeClearingStorage){
         localStorage.clear();
         return;
