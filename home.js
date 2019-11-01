@@ -1,4 +1,3 @@
-console.log("CONNECTED");
 
 var tacoTruckLocations = [
     {
@@ -6,7 +5,7 @@ var tacoTruckLocations = [
         Location: "9915 Flower St, Bellflower, CA 90706"
     },
     {
-        Day: ["Tuesday"],
+        Day: ["Saturday"],
         Location: "120 East 135th St, Los Angeles, CA 90061"
     },
     // {
@@ -17,7 +16,6 @@ var tacoTruckLocations = [
 
 var currentDate = new Date();
 var currentDay = currentDate.getDay();
-console.log(currentDay);
 
 
 var currentDayString = "";
@@ -52,7 +50,6 @@ async function getLatLng() {
     for (var i = 0; i < tacoTruckLocations.length; i++) {
         var isValid = tacoTruckLocations[i].Day.includes(currentDayString);
         if (isValid) {
-            console.log(tacoTruckLocations[i].Location);
             address = tacoTruckLocations[i].Location;
         }
     }
@@ -64,10 +61,7 @@ async function getLatLng() {
 
     const response = await fetch(url);
     const myJson = await response.json();
-    console.log(myJson.results);
-    console.log(myJson.results[0].geometry.location);
     currentLngLat = myJson.results[0].geometry.location;
-    console.log(currentLngLat)
 
     initMap();
 }
