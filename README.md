@@ -1,4 +1,4 @@
-# food-truck-project1
+# Tiki Soul Website
 This is a team project for the UCLA Coding Bootcamp Fall 2019 cohort.
 
 ## Description
