@@ -1,4 +1,7 @@
 
+$(document).ready(function(){
+
+
 var tacoTruckLocations = [
     {
         Day: ["Monday", "Thursday"],
@@ -48,6 +51,54 @@ var promise1 = new Promise(function(resolve, reject) {
   });
 
 console.log(promise1);
+
+function calendar(){
+    var calURL = "https://www.googleapis.com/calendar/v3/calendars/skdqse8eifnon8n5b48qk5p3ig@group.calendar.google.com/events?key=AIzaSyAriM2Y1T6JQCBkNNfKIBWcj-UOxhI2yT0";
+    $.ajax({
+        url: calURL,
+        method: "GET"
+    }).then(function(response){
+        console.log("Calendar");
+        console.log(response);
+
+        var location = response.items[0].location;
+        console.log(location);
+
+        var startDate = response.items[0].start.dateTime;
+        var startDateFin = new Date (startDate);
+        console.log(startDateFin);
+        console.log("value of test");
+        var startTime = response.items[0].start.dateTime;
+        var startTimeFin = new Date (startTime).toLocaleTimeString();
+        console.log(startTimeFin);
+
+        var endTime = response.items[0].end.dateTime;
+        var endTimeFin = new Date(endTime).toLocaleTimeString();
+        var endDateFin = new Date(endTime);
+        console.log(endDateFin);
+        console.log(endTimeFin);
+
+
+        var currentDate = new Date ();
+        console.log(currentDate);
+        var currentTime = new Date ().toLocaleTimeString();
+        console.log(currentTime);
+
+        if (startDateFin >= currentDate && endDateFin <= currentDate){
+            console.log("event is between these two times");
+        } else{
+            console.log("event is outside of these times");
+        };
+
+        // if (calendar Date === Current Date && current time is between the start time and end time ){
+            // address = location 
+            // else no servvice image
+        
+
+    });
+};
+
+calendar();
 
 async function getLatLng() {
     var address = "";
@@ -103,3 +154,5 @@ function getNoServiceImage() {
 }
 
 getLatLng();
+
+});
