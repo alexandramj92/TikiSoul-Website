@@ -39,11 +39,16 @@ if (currentDay == 0) {
 } else if (currentDay == 6){
     currentDayString = "Saturday";
 }
- 
-
-getLatLng();
 
 // function to retrieve latitude and longitude from the addresses in our object
+var promise1 = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve('success');
+    }, 300);
+  });
+
+console.log(promise1);
+
 async function getLatLng() {
     var address = "";
 
@@ -62,12 +67,10 @@ async function getLatLng() {
     const response = await fetch(url);
     const myJson = await response.json();
     currentLngLat = myJson.results[0].geometry.location;
-
-    initMap();
 }
 
 // Initialize and add the map
-function initMap() {
+promise1.then(function initMap() {
     // The location 
     var location = currentLngLat;
 
@@ -85,7 +88,7 @@ function initMap() {
         icon: image,
         title: "TikiSoul"
     });
-}
+});
 
 function getNoServiceImage() {
     // create img tag, etc for when there is no taco truck on any given day of the week
@@ -98,3 +101,5 @@ function getNoServiceImage() {
     mapDisplay.append(noService);
 
 }
+
+getLatLng();
