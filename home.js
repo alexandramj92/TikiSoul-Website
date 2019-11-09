@@ -44,7 +44,7 @@ if (currentDay == 0) {
 var promise1 = new Promise(function(resolve, reject) {
     setTimeout(function() {
       resolve('success');
-    }, 300);
+    }, 600);
   });
 
 console.log(promise1);
