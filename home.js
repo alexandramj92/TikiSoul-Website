@@ -1,12 +1,12 @@
 
 var tacoTruckLocations = [
     {
-        Day: ["Monday", "Thursday"],
-        Location: "9915 Flower St, Bellflower, CA 90706"
+        Day: ["Monday", "Wednesday", "Thursday"],
+        Location: "9915+Flower+St+Bellflower+CA+90706"
     },
     {
         Day: ["Saturday"],
-        Location: "120 East 135th St, Los Angeles, CA 90061"
+        Location: "120+East+135th+St+Los+Angeles+CA+90061"
     },
     // {
     //     Day: ["Wednesday", "Saturday"],
@@ -41,13 +41,18 @@ if (currentDay == 0) {
 }
 
 // function to retrieve latitude and longitude from the addresses in our object
+// var promise1 = new Promise(function(resolve, reject) {
+//     setTimeout(function() {
+//       resolve('success');
+//     }, 600);
+//   });
 var promise1 = new Promise(function(resolve, reject) {
     setTimeout(function() {
       resolve('success');
     }, 600);
   });
 
-console.log(promise1);
+// console.log(promise1);
 
 async function getLatLng() {
     var address = "";
@@ -62,15 +67,25 @@ async function getLatLng() {
     if (address == "") {
         getNoServiceImage();
     }
-    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAriM2Y1T6JQCBkNNfKIBWcj-UOxhI2yT0";
 
-    const response = await fetch(url);
-    const myJson = await response.json();
-    currentLngLat = myJson.results[0].geometry.location;
+    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAdimNx5xswXGbSSO6Y0mZ2bSOs8mk8UNo";
+    try {
+    const response = await axios.get(url);
+
+    if(response.data.results.length > 0){
+    currentLngLat = response.data.results[0].geometry.location;
+    initMap();
+    }
+    else {
+        console.log('looks like error occurred')
+    }
+    }
+    catch(e){
+    }
 }
 
 // Initialize and add the map
-promise1.then(function initMap() {
+function initMap() {
     // The location 
     var location = currentLngLat;
 
@@ -88,7 +103,7 @@ promise1.then(function initMap() {
         icon: image,
         title: "TikiSoul"
     });
-});
+};
 
 function getNoServiceImage() {
     // create img tag, etc for when there is no taco truck on any given day of the week
