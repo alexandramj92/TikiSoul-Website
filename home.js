@@ -46,6 +46,11 @@ if (currentDay == 0) {
 //       resolve('success');
 //     }, 600);
 //   });
+var promise1 = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve('success');
+    }, 600);
+  });
 
 // console.log(promise1);
 
