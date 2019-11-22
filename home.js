@@ -62,7 +62,7 @@ async function getLatLng() {
     if (address == "") {
         getNoServiceImage();
     }
-    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAriM2Y1T6JQCBkNNfKIBWcj-UOxhI2yT0";
+    var url = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyAriM2Y1T6JQCBkNNfKIBWcj-UOxhI2yT0";
 
     const response = await fetch(url);
     const myJson = await response.json();
@@ -74,7 +74,7 @@ promise1.then(function initMap() {
     // The location 
     var location = currentLngLat;
 
-    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+    var image = 'https://cors-anywhere.herokuapp.com/https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
     
     
     // The map, centered at location
