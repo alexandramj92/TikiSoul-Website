@@ -1,7 +1,7 @@
 
 var tacoTruckLocations = [
     {
-        Day: ["Monday", "Thursday"],
+        Day: ["Monday", "Tuesday"],
         Location: "9915 Flower St, Bellflower, CA 90706"
     },
     {
